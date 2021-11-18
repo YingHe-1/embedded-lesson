@@ -53,14 +53,26 @@ void main(void)
       turn_on(D2);
       turn_on(D3);
       turn_on(D4);
+    }else if(count==6){
+      if(led_status==0){
+        turn_on(D1);
+        turn_on(D3);
+        turn_off(D2);
+        turn_off(D4);
+      }
+      else if(led_status==1){
+        turn_on(D2);
+        turn_on(D4);
+        turn_off(D1);
+        turn_off(D3);
+      } 
     }else{
       count=0;
       turn_off(D1);
       turn_off(D2);
       turn_off(D3);
-      turn_off(D4);      
+      turn_off(D4); 
     }
-
   }
   
 }

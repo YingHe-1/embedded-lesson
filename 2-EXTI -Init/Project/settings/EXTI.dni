@@ -9,7 +9,7 @@ TriggerName=main
 LimitSize=0
 ByteLimit=50
 [DebugChecksum]
-Checksum=-349958468
+Checksum=915287435
 [CodeCoverage]
 Enabled=_ 0
 [Exceptions]
@@ -50,6 +50,10 @@ Mode=3
 Graph=0
 Symbiont=0
 Exclusions=
+[Aliases]
+A0=_ "C:\Users\wakaka\Desktop\git工具\git171117\curriculum\MCU_STM32F407\02-按键中断实验\例程\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_exti.c" ""
+Count=1
+SuppressDialog=1
 [Trace2]
 Enabled=0
 ShowSource=0
@@ -102,7 +106,3 @@ Category=_ 0
 [TermIOLog]
 LoggingEnabled=_ 0
 LogFile=_ ""
-[Aliases]
-A0=_ "C:\Users\wakaka\Desktop\git工具\git171117\curriculum\MCU_STM32F407\02-按键中断实验\例程\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_exti.c" ""
-Count=1
-SuppressDialog=1

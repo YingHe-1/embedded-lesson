@@ -62,6 +62,14 @@ void EXTI15_10_IRQHandler(void)
       count++;
     }
   }
+  else if(get_key_status() == K4_PREESED){                           //检测K3被按下
+    delay_count(500);                                           //延时消抖
+    if(get_key_status() == K4_PREESED){                         //确认K3被按下
+      while(get_key_status() == K4_PREESED);                    //等待按键松开
+      led_status = !led_status;                                 
+
+    }
+  }
   if(EXTI_GetITStatus(EXTI_Line14)!=RESET)
     EXTI_ClearITPendingBit(EXTI_Line14);                        //清除LINE14上的中断标志位
   if(EXTI_GetITStatus(EXTI_Line15)!=RESET)
